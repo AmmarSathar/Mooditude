@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "358760936215",
+    "project_id": "mooditude-b8962",
+    "storage_bucket": "mooditude-b8962.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358760936215:android:13b193260ac33228927d52",
+        "android_client_info": {
+          "package_name": "com.example.mooditudeapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBtcEx6o5JfFGAtY948xquFUS-GVcsPnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
