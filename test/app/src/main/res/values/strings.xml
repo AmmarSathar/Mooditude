@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- strings -->
+
+	<string name="app_name">Page 1</string>
+	<string name="ek_img_content">ExportKit Image</string>
+	<string name="joy_string">JOY</string>
+	<string name="sadness_string">SADNESS</string>
+	<string name="anxiety_string">anxiety</string>
+	<string name="confidence_string">Confidence</string>
+	<string name="_15_string">15</string>
+	<string name="mon_string">Mon</string>
+	<string name="_15_ek1_string">15</string>
+	<string name="mon_ek1_string">Mon</string>
+	<string name="_15_ek2_string">15</string>
+	<string name="mon_ek2_string">Mon</string>
+	<string name="_15_ek3_string">15</string>
+	<string name="mon_ek3_string">Mon</string>
+	<string name="_15_ek4_string">15</string>
+	<string name="mon_ek4_string">Mon</string>
+	<string name="_15_ek5_string">15</string>
+	<string name="mon_ek5_string">Mon</string>
+	<string name="_15_ek6_string">15</string>
+	<string name="mon_ek6_string">Mon</string>
+	<string name="mood_string">JOY</string>
+	<string name="_88_string">88</string>
+	<string name="___string">%</string>
+
+	<string name="bpm_string">BPM</string>
+
+</resources>

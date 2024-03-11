@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- _bg__heartpulse_container_ek1 from your XD file. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle" >
+	<corners android:radius="2dp" />
+	<stroke android:color="#ffffff" android:width="1dp" />
+	<solid android:color="@color/_bg__heart_rate_ui_menu_color" />
+</shape>
+
