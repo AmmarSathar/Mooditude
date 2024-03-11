@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         requestNecessaryPermissions();
+        startSensorService();  // <------ forgot to add this line in previous commit
     }
 
     private static final int PERMISSION_REQUEST_CODE = 1;
