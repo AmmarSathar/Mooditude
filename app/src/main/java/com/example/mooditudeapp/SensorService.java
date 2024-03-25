@@ -218,14 +218,6 @@ public class SensorService extends Service {
                         } else {
                             Log.w("SensorService", "CCCD not found for the characteristic.");
                         }
-
-                        // Now, read the current value of the heart rate characteristic.
-//                        boolean initiatedRead = gatt.readCharacteristic(heartRateCharacteristic);
-//                        if (initiatedRead) {
-//                            Log.i("SensorService", "Characteristic read initiated");
-//                        } else {
-//                            Log.w("SensorService", "Characteristic read not initiated");
-//                        }
                     } else {
                         Log.w("SensorService", "Heart Rate Characteristic not found");
                     }
@@ -254,8 +246,6 @@ public class SensorService extends Service {
                     heartRateCallback.onHeartRateUpdate(hr);
                 }
             }
-
-
         }
 
         private int bytesToInt(byte[] bytes) {
@@ -265,8 +255,6 @@ public class SensorService extends Service {
             }
             return 0; // Default value or error value
         }
-
-
     };
 
     private void connectToDevice(BluetoothDevice device) {
@@ -371,7 +359,7 @@ public class SensorService extends Service {
 
     private boolean eventDetectionAlgorithm(int hr) {
 
-        if (hr >= 65) {
+        if (hr >= 120) {
             thresholdExceededCount++;
             if (thresholdExceededCount > 5) {
                 Log.i("eventDetectionAlgorithm", "Event detected.");

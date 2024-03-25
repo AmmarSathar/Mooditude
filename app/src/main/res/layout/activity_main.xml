@@ -6,31 +6,334 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:id="@+id/joyBg"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="#FFEB3B"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
     <ImageView
+        android:id="@+id/joyImage"
+        android:layout_width="268dp"
+        android:layout_height="372dp"
+        android:visibility="visible"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/joy"
+        tools:ignore="InvalidId" />
+
+    <View
+        android:id="@+id/sadBg"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="#03A9F4"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/sadImage"
+        android:layout_width="268dp"
+        android:layout_height="372dp"
+        android:visibility="invisible"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/sadness"
+        tools:ignore="InvalidId" />
+
+    <View
+        android:id="@+id/anxiousBg"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="#535157"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/anxietyImage"
+        android:layout_width="268dp"
+        android:layout_height="372dp"
+        android:visibility="invisible"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/anxiety"
+        tools:ignore="InvalidId" />
+
+    <View
+        android:id="@+id/confidentBg"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="#F44336"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/confidenceImage"
+        android:layout_width="268dp"
+        android:layout_height="372dp"
+        android:visibility="invisible"
+        android:contentDescription="TODO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/confidence"
+        tools:ignore="InvalidId" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/menuFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/__pixel_heart_6"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="27dp" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/purple_200"
+        android:clickable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/calendarFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:clickable="true"
+        android:tint="@color/purple_200"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/menuFab"
+        app:layout_constraintTop_toBottomOf="@+id/menuFab"
+        app:srcCompat="@android:drawable/ic_menu_agenda"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/HeartRateTextView"
+        android:id="@+id/calendarText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BPM"
-        android:textSize="60sp"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/fab_text_bg"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp"
+        android:text="Calendar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/calendarFab"
+        app:layout_constraintStart_toEndOf="@+id/calendarFab"
+        app:layout_constraintTop_toTopOf="@+id/calendarFab"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/heartRateFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:clickable="true"
+        android:tint="@color/purple_200"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/calendarFab"
+        app:layout_constraintTop_toBottomOf="@+id/calendarFab"
+        app:srcCompat="@android:drawable/ic_menu_agenda"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/heartRateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/fab_text_bg"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp"
+        android:text="Heart rate"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/heartRateFab"
+        app:layout_constraintStart_toEndOf="@+id/heartRateFab"
+        app:layout_constraintTop_toTopOf="@+id/heartRateFab"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/buttonFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_200"
+        android:clickable="true"
+        android:tint="@color/purple_200"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/heartRateFab"
+        app:layout_constraintTop_toBottomOf="@+id/heartRateFab"
+        app:srcCompat="@android:drawable/ic_menu_agenda"
+        app:tint="@color/white"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/buttonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:background="@drawable/fab_text_bg"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="8dp"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonFab"
+        app:layout_constraintStart_toEndOf="@+id/buttonFab"
+        app:layout_constraintTop_toTopOf="@+id/buttonFab"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <TextView
+        android:id="@+id/moodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JOY"
+        android:textSize="40dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <HorizontalScrollView
+        android:layout_width="419dp"
+        android:layout_height="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp">
+
+            <Button
+                android:id="@+id/joyfulButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Joy"
+                android:backgroundTint="@color/purple_500"
+                tools:ignore="MissingConstraints"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/sadButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sadness"
+                android:backgroundTint="@color/purple_500"
+                tools:ignore="MissingConstraints"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/anxiousButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anxiety"
+                android:backgroundTint="@color/purple_500"
+                tools:ignore="MissingConstraints"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/confidentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confidence"
+                android:backgroundTint="@color/purple_500"
+                tools:ignore="MissingConstraints"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="107dp"
+        android:layout_height="137dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="@color/transparent"
+        android:clickable="true"
+        android:contentDescription="TODO"
+        android:onClick="openUserProfile"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,OnClick" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/moodValTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
-        android:text="Mooditude"
+        android:layout_marginTop="120dp"
+        android:letterSpacing="0.05"
+        android:text="- -%"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
