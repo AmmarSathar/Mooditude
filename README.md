@@ -46,7 +46,7 @@ Mooditude aims to address this problem by leveraging technology to track physiol
 - **Frameworks/Libraries**:  Arduino
 - **Database**: Firebase
 - **APIs**: Google Maps API, Firebase API 
-- **Tools**: Git, GitHub, Android Studio, Figma
+- **Tools**: Git, GitHub, Android Studio
 
 ## Contributing
 
