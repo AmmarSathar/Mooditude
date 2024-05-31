@@ -2,6 +2,10 @@
 
 # Mooditude App
 
+## Demo
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/MNEN1bKYqRw/0.jpg)](https://www.youtube.com/watch?v=MNEN1bKYqRw)
+
 ## Overview
 
 Mooditude is an application aimed at tracking users' heart rate and location to detect patterns in overall user mood. The app provides insights and predictions on when and where stress and anxiety are more likely to occur, helping users gain a better understanding of the causes of their unwanted feelings.
